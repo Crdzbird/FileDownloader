@@ -12,15 +12,6 @@ final _downloaderProvider = Provider.autoDispose(
 );
 
 class MainScreen extends ConsumerWidget {
-  // DownloaderCore? downloaderController;
-  // late String paths;
-
-  // DownloaderUtils? options;
-
-  // void setup() async {
-  //   paths = (await getExternalStorageDirectory())!.path;
-  // }
-
   @override
   Widget build(BuildContext context, ScopedReader watch) {
     final internetConnectionState = watch(_internetConnectionProvider);
@@ -47,30 +38,4 @@ class MainScreen extends ConsumerWidget {
       ),
     );
   }
-
-  // void pause() async {
-  //   if (downloaderController != null) {
-  //     await downloaderController!.pause();
-  //   }
-  // }
-
-  // void resume() async {
-  //   await downloaderController!.resume();
-  // }
-
-  // void downloads(InternetConnectionState internetConnectionState) async {
-  //   options = DownloaderUtils(
-  //       progress: ProgressImplementation(),
-  //       target: File('$paths/archivo1.zip'),
-  //       onDone: () => print('done'),
-  //       progressCallback: (current, total) {
-  //         final progress = (current / total) * 100;
-  //         print('Downloading: $progress');
-  //       });
-  //   downloaderController ??= await download(
-  //       'http://ipv4.download.thinkbroadband.com/200MB.zip', options!);
-  //   if (internetConnectionState.hasInternet) {
-  //     await downloaderController!.resume();
-  //   }
-  // }
 }
