@@ -5,7 +5,7 @@ import 'dart:typed_data';
 import 'package:dio/dio.dart';
 import 'package:file_downloader/core/downloader/core/downloader_core.dart';
 import 'package:file_downloader/core/downloader/utils/downloader_utils.dart';
-import 'package:file_downloader/core/utils/constants.dart';
+import 'package:file_downloader/core/downloader/utils/constants.dart';
 import 'package:file_downloader/core/utils/dart_define_config.dart';
 
 typedef ProgressCallback = void Function(int count, int total);

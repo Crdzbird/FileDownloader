@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:file_downloader/core/downloader/downloader.dart';
 import 'package:file_downloader/core/downloader/utils/downloader_utils.dart';
-import 'package:file_downloader/core/utils/constants.dart';
+import 'package:file_downloader/core/downloader/utils/constants.dart';
 
 class DownloaderCore {
   late StreamSubscription _inner;

@@ -5,7 +5,7 @@ import 'package:file_downloader/core/downloader/core/downloader_core.dart';
 import 'package:file_downloader/core/downloader/downloader.dart';
 import 'package:file_downloader/core/downloader/implementations/progress_implementation.dart';
 import 'package:file_downloader/core/downloader/utils/downloader_utils.dart';
-import 'package:file_downloader/core/utils/constants.dart';
+import 'package:file_downloader/core/downloader/utils/constants.dart';
 import 'package:file_downloader/di/injection.dart';
 import 'package:file_downloader/presentation/file_downloader_main.dart';
 import 'package:file_downloader/presentation/widgets/custom_toast/custom_toast.dart';
